@@ -18,6 +18,9 @@ every story — numbered to match the stories below it.
   earthquake in Nepal (Taplejung, 24 Nov), and the Solomon Islands
   dropping its China security pact (Honiara, 24 Nov).
 
+The map is drawn from Natural Earth 110m land data (public domain),
+and every pin sits at the real latitude and longitude of its story.
+
 Every fact was checked in-session against a named source (Reuters,
 Xinhua), and each story carries its own date and source in the image.
 

@@ -21,6 +21,8 @@ for (let i = 0; i < MAGIC.length; i++) {
 }
 
 // The IHDR chunk stores width then height, big-endian, at bytes 16 and 20.
+// Bytes 12..15 must spell IHDR, or this is not a PNG at all.
+if (data.toString("latin1", 12, 16) !== "IHDR") bad("entry.png has no IHDR chunk");
 const w = data.readUInt32BE(16);
 const h = data.readUInt32BE(20);
 if (w !== h) bad(`image is ${w}x${h}, it must be square`);
